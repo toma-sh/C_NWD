@@ -16,8 +16,17 @@ int main()
 
 int NWD(int a,int b)		
 {
+    int a1=a;int b1=b;
+	while (a!=b)		
+	{
+		if (a>b)		
+			a=a-b;
 
-	
+		else 			
+			b=b-a;
+	}
+
+	printf("Najwiekszy wspolny dzielnik liczb %d i %d wynosi %d\n",a1,b1,a);
 	
 	return 0;	
 }
